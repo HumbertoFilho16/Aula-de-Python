@@ -1,0 +1,9 @@
+bigbase = float(input('Insira a base maior: '))
+smallbase = float(input('Insira a base menor: '))
+height = float(input('Insira a altura: '))
+
+def area():
+  x = ((bigbase + smallbase) * height) / 2
+  return x
+
+print(area())
