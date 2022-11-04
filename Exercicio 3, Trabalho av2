@@ -1,0 +1,25 @@
+def conv(H, M):
+  if H <= 12:
+    type = 'A'
+    return H, M, type
+  elif H == 24:
+    H = 0
+    type = 'A'
+    return H, M, type
+  else:
+    H = H - 12
+    type = 'P'
+    return H, M, type
+
+def out():
+  if type == 'A':
+    print(f'{h}:{m} A.M.')
+  else:
+    print(f'{h}:{m} P.M.')
+
+
+while 1 != 0:
+  h, m, type = conv(int(input()), int(input()))
+  if h < 0:
+    break
+  out()
