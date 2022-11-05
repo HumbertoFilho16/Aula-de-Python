@@ -1,5 +1,5 @@
 def soma_imposto(taxa_imposto, custo):
-  x = taxa_imposto + custo
+  x = ((taxa_imposto / 100) * custo) + custo
   return x
 
-print(soma_imposto(float(input('Insira a taxa de imposto: ')), float(input('Insira o custo: '))))
+print(soma_imposto(float(input('Insira a porcentagem do imposto: ')), float(input('Insira o custo: '))))
